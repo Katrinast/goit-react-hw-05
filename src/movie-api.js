@@ -20,11 +20,13 @@ export const getMovies = async () => {
   
 }
 
-export const getSearchMovie = async (query) => {
-  const response = await axios.get(`/search/movie${query}?include_adult=false&language=en-US&page=1`, options);
-
+export const getSearchMovie = async (value) => {
+  const response = await axios.get(
+    `/search/movie?query=${value}&include_adult=false&language=en-US&page=1`,
+    options
+  );
   return response.data.results;
-}
+};
 
 export const getMovieById = async (id) => {
   const response = await axios.get(`/movie/${id}?language=en-US`, options);

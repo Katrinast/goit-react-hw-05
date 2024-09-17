@@ -2,7 +2,7 @@
 import { Route, Routes } from "react-router-dom"
 import Navigation from "./components/Navigation/Navigation"
 import HomePage from "./pages/HomePage"
-import SearchMovies from "./components/SearchMovie/searchMovie"
+import MoviesPage from "./pages/MoviesPage"
 import NotFoundPage from "./pages/NotFoundPage"
 import MovieDetailsPage from "./pages/MovieDetailsPage"
 import MovieCast from "./components/MovieCast/MovieCast"
@@ -13,7 +13,7 @@ function App() {
   <Navigation/>
     <Routes>
       <Route path="/" element={<HomePage/>}></Route>
-      <Route path="/movies" element={<SearchMovies />}></Route>
+      <Route path="/movies" element={<MoviesPage />}></Route>
       <Route path="/movies/:movieId" element={ <MovieDetailsPage/>}>
         <Route path="cast" element={<MovieCast/>}></Route>
         <Route path="reviews" element={<MovieReviews/>}></Route>

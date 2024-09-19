@@ -1,0 +1,26 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 30px;
+  margin-top: 15px;
+}
+
+.listItem {
+  width: calc((100% - 80px) / 5);
+  max-width: 100%;
+}
+
+.listImg {
+  margin-bottom: 15px;
+}
+
+.link {
+  font-size: 25px;
+  color: rgb(115, 223, 53);
+}
+
+.link:hover {
+  color: blueviolet;
+}

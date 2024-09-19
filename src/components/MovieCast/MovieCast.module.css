@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  justify-content: center;
+}
+
+.listItem {
+  width: calc((100% - 160px) / 9);
+}
+
+.paragrah {
+  font-size: 25px;
+  color: blue;
+}

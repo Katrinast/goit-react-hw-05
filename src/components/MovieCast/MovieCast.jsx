@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getMovieCredits } from "../../movie-api";
 
+import css from './MovieCast.module.css'
+
 export default function MovieCast() {
   const { movieId } = useParams(); 
   const [movieCredits, setMovieCredits] = useState([]); 
@@ -22,11 +24,11 @@ export default function MovieCast() {
 
   return (
     <>
-      <ul>
+      <ul className={css.list}>
         {movieCredits.map(({ id, profile_path, name }) => (
-          <li key={id}>
+          <li className={css.listItem} key={id}>
             {profile_path && <img src={imgBaseUrl + profile_path} alt={name} />}
-            <p>{name}</p>
+            <p className={css.paragrah}>{name}</p>
           </li>
         ))}
       </ul>

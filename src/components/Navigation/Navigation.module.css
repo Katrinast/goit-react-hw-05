@@ -1,0 +1,31 @@
+.header {
+  padding: 30px 0;
+  background-color: rgb(154, 167, 241);
+}
+
+.navigation {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.navigationItem {
+  text-align: center;
+}
+
+.link {
+  padding: 10px;
+  width: 140px;
+  background-color: azure;
+  color: black;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.link:hover {
+  color: blue;
+}
+
+.active {
+  background-color: aquamarine;
+}
